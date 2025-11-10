@@ -161,17 +161,17 @@
          "type": "HTTP_SENDER",
          "points": [
             {
-               "dataPointId": "DP_114918ABC5",
+               "dataPointId": "DP_114918ABC538",
                "includeTimestamp": false,
                "parameterName": "BIN38"
             },
             {
-               "dataPointId": "DP_600541ABC5",
+               "dataPointId": "DP_600541ABC538",
                "includeTimestamp": false,
                "parameterName": "FLOAT38"
             },
             {
-               "dataPointId": "DP_052981ABC5",
+               "dataPointId": "DP_052981ABC538",
                "includeTimestamp": false,
                "parameterName": "INT38"
             }
@@ -201,4 +201,5 @@
          "name": "ENVIAR/RECEBER 38"
       }
    ]
+
 }
