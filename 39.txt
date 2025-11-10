@@ -163,7 +163,7 @@
             {
                "dataPointId": "DP_114918ABC539",
                "includeTimestamp": false,
-               "parameterName": "BIN38"
+               "parameterName": "BIN39"
             },
             {
                "dataPointId": "DP_600541ABC539",
@@ -203,3 +203,4 @@
    ]
 
 }
+
