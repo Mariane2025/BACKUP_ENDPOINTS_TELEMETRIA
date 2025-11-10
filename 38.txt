@@ -191,15 +191,16 @@
          "xid": "WL_757103ABC538",
          "user": "admin",
          "dataPoints": [
-            "DP_114918ABC5",
-            "DP_600541ABC5",
-            "DP_052981ABC5",
-            "DP_569236ABC5",
-            "DP_722462ABC5",
-            "DP_058260ABC5"
+            "DP_114918ABC538",
+            "DP_600541ABC538",
+            "DP_052981ABC538",
+            "DP_569236ABC538",
+            "DP_722462ABC538",
+            "DP_058260ABC538"
          ],
          "name": "ENVIAR/RECEBER 38"
       }
    ]
 
 }
+
