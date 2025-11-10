@@ -82,7 +82,7 @@
             "settable": true
          },
          "eventDetectors": [],
-         "dataSourceXid": "DS_992547ABC546",
+         "dataSourceXid": "DS_992547ABC549",
          "deviceName": "ENVIAR NODERED/MQTT49",
          "enabled": true,
          "name": "FLOAT49",
@@ -203,3 +203,4 @@
    ]
 
 }
+
