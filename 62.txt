@@ -134,7 +134,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "DP_722462ABC5362",
+         "xid": "DP_722462ABC562",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -182,7 +182,7 @@
          "name": "ENVIAR PARA NODERED 62",
          "sendSnapshot": true,
          "snapshotSendPeriods": 30,
-         "url": "http://localhost:1880/nodered11",
+         "url": "http://localhost:1880/nodered62",
          "usePost": false
       }
    ],

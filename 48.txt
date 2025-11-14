@@ -82,7 +82,7 @@
             "settable": true
          },
          "eventDetectors": [],
-         "dataSourceXid": "DS_992547ABC546",
+         "dataSourceXid": "DS_992547ABC548",
          "deviceName": "ENVIAR NODERED/MQTT48",
          "enabled": true,
          "name": "FLOAT48",
@@ -134,7 +134,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "DP_722462ABC5348",
+         "xid": "DP_722462ABC548",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -161,17 +161,17 @@
          "type": "HTTP_SENDER",
          "points": [
             {
-               "dataPointId": "DP_114918ABC5",
+               "dataPointId": "DP_114918ABC548",
                "includeTimestamp": false,
                "parameterName": "BIN48"
             },
             {
-               "dataPointId": "DP_600541ABC5",
+               "dataPointId": "DP_600541ABC548",
                "includeTimestamp": false,
                "parameterName": "FLOAT48"
             },
             {
-               "dataPointId": "DP_052981ABC5",
+               "dataPointId": "DP_052981ABC548",
                "includeTimestamp": false,
                "parameterName": "INT48"
             }
@@ -182,7 +182,7 @@
          "name": "ENVIAR PARA NODERED 48",
          "sendSnapshot": true,
          "snapshotSendPeriods": 30,
-         "url": "http://localhost:1880/nodered11",
+         "url": "http://localhost:1880/nodered48",
          "usePost": false
       }
    ],
@@ -191,12 +191,12 @@
          "xid": "WL_757103ABC548",
          "user": "admin",
          "dataPoints": [
-            "DP_114918ABC5",
-            "DP_600541ABC5",
-            "DP_052981ABC5",
-            "DP_569236ABC5",
-            "DP_722462ABC5",
-            "DP_058260ABC5"
+            "DP_114918ABC548",
+            "DP_600541ABC548",
+            "DP_052981ABC548",
+            "DP_569236ABC548",
+            "DP_722462ABC548",
+            "DP_058260ABC548"
          ],
          "name": "ENVIAR/RECEBER 48"
       }

@@ -134,7 +134,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "DP_722462ABC5359",
+         "xid": "DP_722462ABC559",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -161,17 +161,17 @@
          "type": "HTTP_SENDER",
          "points": [
             {
-               "dataPointId": "DP_114918ABC5",
+               "dataPointId": "DP_114918ABC559",
                "includeTimestamp": false,
                "parameterName": "BIN59"
             },
             {
-               "dataPointId": "DP_600541ABC5",
+               "dataPointId": "DP_600541ABC559",
                "includeTimestamp": false,
                "parameterName": "FLOAT59"
             },
             {
-               "dataPointId": "DP_052981ABC5",
+               "dataPointId": "DP_052981ABC559",
                "includeTimestamp": false,
                "parameterName": "INT59"
             }
@@ -182,7 +182,7 @@
          "name": "ENVIAR PARA NODERED 59",
          "sendSnapshot": true,
          "snapshotSendPeriods": 30,
-         "url": "http://localhost:1880/nodered11",
+         "url": "http://localhost:1880/nodered59",
          "usePost": false
       }
    ],
@@ -201,5 +201,4 @@
          "name": "ENVIAR/RECEBER 59"
       }
    ]
-
 }

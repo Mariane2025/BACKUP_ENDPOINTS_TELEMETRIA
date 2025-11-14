@@ -161,17 +161,17 @@
          "type": "HTTP_SENDER",
          "points": [
             {
-               "dataPointId": "DP_114918ABC537",
+               "dataPointId": "DP_114918ABC5",
                "includeTimestamp": false,
                "parameterName": "BIN37"
             },
             {
-               "dataPointId": "DP_600541ABC537",
+               "dataPointId": "DP_600541ABC5",
                "includeTimestamp": false,
                "parameterName": "FLOAT37"
             },
             {
-               "dataPointId": "DP_052981ABC537",
+               "dataPointId": "DP_052981ABC5",
                "includeTimestamp": false,
                "parameterName": "INT37"
             }
@@ -191,15 +191,14 @@
          "xid": "WL_757103ABC537",
          "user": "admin",
          "dataPoints": [
-            "DP_114918ABC537",
-            "DP_600541ABC537",
-            "DP_052981ABC537",
-            "DP_569236ABC537",
-            "DP_722462ABC537",
-            "DP_058260ABC537"
+            "DP_114918ABC5",
+            "DP_600541ABC5",
+            "DP_052981ABC5",
+            "DP_569236ABC5",
+            "DP_722462ABC5",
+            "DP_058260ABC5"
          ],
          "name": "ENVIAR/RECEBER 37"
       }
    ]
-
 }

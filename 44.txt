@@ -134,7 +134,7 @@
          "tolerance": 0.0
       },
       {
-         "xid": "DP_722462ABC5344",
+         "xid": "DP_722462ABC544",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -161,17 +161,17 @@
          "type": "HTTP_SENDER",
          "points": [
             {
-               "dataPointId": "DP_114918ABC5",
+               "dataPointId": "DP_114918ABC544",
                "includeTimestamp": false,
                "parameterName": "BIN44"
             },
             {
-               "dataPointId": "DP_600541ABC5",
+               "dataPointId": "DP_600541ABC544",
                "includeTimestamp": false,
                "parameterName": "FLOAT44"
             },
             {
-               "dataPointId": "DP_052981ABC5",
+               "dataPointId": "DP_052981ABC544",
                "includeTimestamp": false,
                "parameterName": "INT44"
             }
@@ -182,7 +182,7 @@
          "name": "ENVIAR PARA NODERED 44",
          "sendSnapshot": true,
          "snapshotSendPeriods": 30,
-         "url": "http://localhost:1880/nodered11",
+         "url": "http://localhost:1880/nodered44",
          "usePost": false
       }
    ],
@@ -191,12 +191,12 @@
          "xid": "WL_757103ABC544",
          "user": "admin",
          "dataPoints": [
-            "DP_114918ABC5",
-            "DP_600541ABC5",
-            "DP_052981ABC5",
-            "DP_569236ABC5",
-            "DP_722462ABC5",
-            "DP_058260ABC5"
+            "DP_114918ABC544",
+            "DP_600541ABC544",
+            "DP_052981ABC544",
+            "DP_569236ABC544",
+            "DP_722462ABC544",
+            "DP_058260ABC544"
          ],
          "name": "ENVIAR/RECEBER 44"
       }

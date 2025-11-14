@@ -61,7 +61,7 @@
          "dataSourceXid": "DS_992547ABC547",
          "deviceName": "ENVIAR NODERED/MQTT47",
          "enabled": true,
-         "name": "INT46",
+         "name": "INT47",
          "intervalLoggingPeriod": 15,
          "purgePeriod": 1,
          "textRenderer": { "type": "PLAIN", "suffix": "" },
@@ -127,14 +127,14 @@
          "dataSourceXid": "DS_161663ABC547",
          "deviceName": "RECEBER NODERED/MQTT47",
          "enabled": true,
-         "name": "BIN46",
+         "name": "BIN47",
          "intervalLoggingPeriod": 15,
          "purgePeriod": 1,
          "textRenderer": { "type": "PLAIN", "suffix": "" },
          "tolerance": 0.0
       },
       {
-         "xid": "DP_722462ABC5347",
+         "xid": "DP_722462ABC547",
          "loggingType": "ON_CHANGE",
          "intervalLoggingPeriodType": "MINUTES",
          "intervalLoggingType": "INSTANT",
@@ -161,17 +161,17 @@
          "type": "HTTP_SENDER",
          "points": [
             {
-               "dataPointId": "DP_114918ABC5",
+               "dataPointId": "DP_114918ABC547",
                "includeTimestamp": false,
                "parameterName": "BIN47"
             },
             {
-               "dataPointId": "DP_600541ABC5",
+               "dataPointId": "DP_600541ABC547",
                "includeTimestamp": false,
                "parameterName": "FLOAT47"
             },
             {
-               "dataPointId": "DP_052981ABC5",
+               "dataPointId": "DP_052981ABC547",
                "includeTimestamp": false,
                "parameterName": "INT47"
             }
@@ -182,7 +182,7 @@
          "name": "ENVIAR PARA NODERED 47",
          "sendSnapshot": true,
          "snapshotSendPeriods": 30,
-         "url": "http://localhost:1880/nodered11",
+         "url": "http://localhost:1880/nodered47",
          "usePost": false
       }
    ],
@@ -201,5 +201,4 @@
          "name": "ENVIAR/RECEBER 47"
       }
    ]
-
 }
