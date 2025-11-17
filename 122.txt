@@ -1,0 +1,204 @@
+{
+   "graphicalViews": [],
+   "dataSources": [
+      {
+         "xid": "DS_992547ABC5122",
+         "type": "VIRTUAL",
+         "updatePeriodType": "SECONDS",
+         "enabled": true,
+         "name": "ENVIAR NODERED/MQTT122",
+         "updatePeriods": 10
+      },
+      {
+         "xid": "DS_161663ABC5122",
+         "type": "HTTP_RECEIVER",
+         "deviceIdWhiteList": ["*"],
+         "enabled": true,
+         "ipWhiteList": ["*.*.*.*"],
+         "name": "RECEBER NODERED/MQTT122"
+      }
+   ],
+   "dataPoints": [
+      {
+         "xid": "DP_114918ABC5122",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "changeType": {
+               "type": "NO_CHANGE",
+               "startValue": "0"
+            },
+            "settable": true
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_992547ABC5122",
+         "deviceName": "ENVIAR NODERED/MQTT122",
+         "enabled": true,
+         "name": "BIN122",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_052981ABC5122",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "changeType": {
+               "type": "NO_CHANGE",
+               "startValue": "0"
+            },
+            "settable": true
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_992547ABC5122",
+         "deviceName": "ENVIAR NODERED/MQTT122",
+         "enabled": true,
+         "name": "INT122",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_600541ABC5122",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "changeType": {
+               "type": "NO_CHANGE",
+               "startValue": "0"
+            },
+            "settable": true
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_992547ABC5122",
+         "deviceName": "ENVIAR NODERED/MQTT122",
+         "enabled": true,
+         "name": "FLOAT122",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_058260ABC5122",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "binary0Value": "",
+            "parameterName": "INT122"
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_161663ABC5122",
+         "deviceName": "RECEBER NODERED/MQTT122",
+         "enabled": true,
+         "name": "INT122",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_569236ABC5122",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "binary0Value": "",
+            "parameterName": "BIN122"
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_161663ABC5122",
+         "deviceName": "RECEBER NODERED/MQTT122",
+         "enabled": true,
+         "name": "BIN122",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_722462ABC5122",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "binary0Value": "",
+            "parameterName": "FLOAT122"
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_161663ABC5122",
+         "deviceName": "RECEBER NODERED/MQTT122",
+         "enabled": true,
+         "name": "FLOAT122",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      }
+   ],
+   "publishers": [
+      {
+         "xid": "PUB_190018ABC5122",
+         "type": "HTTP_SENDER",
+         "points": [
+            {
+               "dataPointId": "DP_114918ABC5122",
+               "includeTimestamp": false,
+               "parameterName": "BIN122"
+            },
+            {
+               "dataPointId": "DP_600541ABC5122",
+               "includeTimestamp": false,
+               "parameterName": "FLOAT122"
+            },
+            {
+               "dataPointId": "DP_052981ABC5122",
+               "includeTimestamp": false,
+               "parameterName": "INT122"
+            }
+         ],
+         "snapshotSendPeriodType": "SECONDS",
+         "dateFormat": "DATE_FORMAT_BASIC",
+         "enabled": true,
+         "name": "ENVIAR PARA NODERED 122",
+         "sendSnapshot": true,
+         "snapshotSendPeriods": 30,
+         "url": "http://localhost:1880/nodered122",
+         "usePost": false
+      }
+   ],
+   "watchLists": [
+      {
+         "xid": "WL_757103ABC5122",
+         "user": "admin",
+         "dataPoints": [
+            "DP_114918ABC5122",
+            "DP_600541ABC5122",
+            "DP_052981ABC5122",
+            "DP_569236ABC5122",
+            "DP_722462ABC5122",
+            "DP_058260ABC5122"
+         ],
+         "name": "ENVIAR/RECEBER 122"
+      }
+   ]
+}
