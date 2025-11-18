@@ -1,0 +1,204 @@
+{
+   "graphicalViews": [],
+   "dataSources": [
+      {
+         "xid": "DS_992547ABC5153",
+         "type": "VIRTUAL",
+         "updatePeriodType": "SECONDS",
+         "enabled": true,
+         "name": "ENVIAR NODERED/MQTT153",
+         "updatePeriods": 10
+      },
+      {
+         "xid": "DS_161663ABC5153",
+         "type": "HTTP_RECEIVER",
+         "deviceIdWhiteList": ["*"],
+         "enabled": true,
+         "ipWhiteList": ["*.*.*.*"],
+         "name": "RECEBER NODERED/MQTT153"
+      }
+   ],
+   "dataPoints": [
+      {
+         "xid": "DP_114918ABC5153",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "changeType": {
+               "type": "NO_CHANGE",
+               "startValue": "0"
+            },
+            "settable": true
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_992547ABC5153",
+         "deviceName": "ENVIAR NODERED/MQTT153",
+         "enabled": true,
+         "name": "BIN153",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_052981ABC5153",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "changeType": {
+               "type": "NO_CHANGE",
+               "startValue": "0"
+            },
+            "settable": true
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_992547ABC5153",
+         "deviceName": "ENVIAR NODERED/MQTT153",
+         "enabled": true,
+         "name": "INT153",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_600541ABC5153",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "changeType": {
+               "type": "NO_CHANGE",
+               "startValue": "0"
+            },
+            "settable": true
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_992547ABC5153",
+         "deviceName": "ENVIAR NODERED/MQTT153",
+         "enabled": true,
+         "name": "FLOAT153",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_058260ABC5153",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "binary0Value": "",
+            "parameterName": "INT153"
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_161663ABC5153",
+         "deviceName": "RECEBER NODERED/MQTT153",
+         "enabled": true,
+         "name": "INT153",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_569236ABC5153",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "BINARY",
+            "binary0Value": "",
+            "parameterName": "BIN153"
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_161663ABC5153",
+         "deviceName": "RECEBER NODERED/MQTT153",
+         "enabled": true,
+         "name": "BIN153",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      },
+      {
+         "xid": "DP_722462ABC5153",
+         "loggingType": "ON_CHANGE",
+         "intervalLoggingPeriodType": "MINUTES",
+         "intervalLoggingType": "INSTANT",
+         "purgeType": "YEARS",
+         "pointLocator": {
+            "dataType": "NUMERIC",
+            "binary0Value": "",
+            "parameterName": "FLOAT153"
+         },
+         "eventDetectors": [],
+         "dataSourceXid": "DS_161663ABC5153",
+         "deviceName": "RECEBER NODERED/MQTT153",
+         "enabled": true,
+         "name": "FLOAT153",
+         "intervalLoggingPeriod": 15,
+         "purgePeriod": 1,
+         "textRenderer": { "type": "PLAIN", "suffix": "" },
+         "tolerance": 0.0
+      }
+   ],
+   "publishers": [
+      {
+         "xid": "PUB_190018ABC5153",
+         "type": "HTTP_SENDER",
+         "points": [
+            {
+               "dataPointId": "DP_114918ABC5153",
+               "includeTimestamp": false,
+               "parameterName": "BIN153"
+            },
+            {
+               "dataPointId": "DP_600541ABC5153",
+               "includeTimestamp": false,
+               "parameterName": "FLOAT153"
+            },
+            {
+               "dataPointId": "DP_052981ABC5153",
+               "includeTimestamp": false,
+               "parameterName": "INT153"
+            }
+         ],
+         "snapshotSendPeriodType": "SECONDS",
+         "dateFormat": "DATE_FORMAT_BASIC",
+         "enabled": true,
+         "name": "ENVIAR PARA NODERED 153",
+         "sendSnapshot": true,
+         "snapshotSendPeriods": 30,
+         "url": "http://localhost:1880/nodered153",
+         "usePost": false
+      }
+   ],
+   "watchLists": [
+      {
+         "xid": "WL_757103ABC5153",
+         "user": "admin",
+         "dataPoints": [
+            "DP_114918ABC5153",
+            "DP_600541ABC5153",
+            "DP_052981ABC5153",
+            "DP_569236ABC5153",
+            "DP_722462ABC5153",
+            "DP_058260ABC5153"
+         ],
+         "name": "ENVIAR/RECEBER 153"
+      }
+   ]
+}
